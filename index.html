@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colib-Course Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo1.jpg" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Library</a></li>
+                    <li><a href="">Test</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Colib<br>Course Library</h2>
+                <h3>The Better Online Learning</h3>
+                <p>(Simple/Easy Learning)</p>
+                <h4>FREE</h4>
+                <button type="button">Lets go<img src="images/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="images/logo1.jpg" class="buku">
+                <div class="color-box"></div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="images/fb.png">
+            <img src="images/tw.png">
+            <img src="images/ig.png">
+        </div>
+    </div>
+
+    <script>
+
+        var menulist = document.getElementById("menulist")
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "130px"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
